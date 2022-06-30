@@ -20,7 +20,7 @@ describe('Testes da função HandlerElephants', () => {
     expect(handlerElephants('popularity')).toEqual(5);
   });
   it('D eve retornar um array de dias da semana que não contém Monday;', () => {
-    expect(handlerElephants('availability')).toContain("Friday", "Saturday", "Sunday", "Tuesday");
+    expect(handlerElephants('availability')).toContain('Friday', 'Saturday', 'Sunday', 'Tuesday');
   });
   it('Deve retornar a string Parâmetro inválido, é necessário uma string', () => {
     expect(handlerElephants({})).toEqual('Parâmetro inválido, é necessário uma string');
