@@ -46,7 +46,7 @@ function getSchedule(scheduleTarget) {
   const daysAnimals = data.species.filter((element) =>
     element.availability.includes(scheduleTarget)).map((element) => element.name);
   const daysAndAnimalsName = Object.keys(data.hours) + animalsNameT;
-  if (animalsNameT.includes(scheduleTarget)){
+  if (animalsNameT.includes(scheduleTarget)) {
     return data.species.filter((element) =>
       element.name === scheduleTarget).map((element) => element.availability)[0];
   }
